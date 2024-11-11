@@ -16,10 +16,17 @@
     --accent-foreground: rgb(41 37 36);
     --destructive: rgb(185 28 28);
     --destructive-foreground: rgb(255, 255, 255);
+    --muted: rgb(229 229 229);
+    --muted-foreground: rgb(90, 89, 89);
     --border: rgb(229 229 229);
     --input: rgb(245 245 245);
     --ring: rgb(245 245 245);
     --radius: 0.5rem;
+    --color-1: 0 100% 63%;
+    --color-2: 270 100% 63%;
+    --color-3: 210 100% 63%;
+    --color-4: 195 100% 63%;
+    --color-5: 90 100% 63%;
   }
 
   .dark {

@@ -1,2 +1,4 @@
+export * from './contact-me'
 export * from './nav-link'
 export * from './topbar'
+export * from './welcome'

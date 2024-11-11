@@ -1,5 +1,7 @@
 {
   "intro": {
-    "welcome": "Hola! Soy Danny, desarrollador de software y analista de datos de Colombia. ¡Trabajemos juntos."
+    "greeting": "Hola! Soy ",
+    "description": " un desarrollador de software y analista de datos de Colombia. ¡Trabajemos juntos!",
+    "cta": "Mira mi trabajo"
   }
 }

@@ -1,14 +1,15 @@
 import { Logo, Divider, Avatar, BarIcons } from '@/modules/common/components'
 import { cn } from '@/modules/common/utils'
-import { Link } from '@/modules/home/components'
+import { Link, ContactMe } from '@/modules/home/components'
 import { navLinks } from '@/modules/home/helpers'
 
 export const Topbar = () => {
   return (
-    <header className="bg-background h-16 w-full px-4 flex flex-row items-center justify-between col-start-1 md:px-12">
+    <header className="bg-background h-16 w-full px-4 flex flex-row items-center justify-between col-start-1 md:px-16">
       <Logo />
+      <ContactMe />
 
-      <nav className="h-full flex items-center">
+      <nav className="h-full flex items-center max-sm:hidden">
         <ul className="flex flex-row items-center gap-x-2">
           {navLinks.map((link) => {
             if (link.type === 'divider')
@@ -29,7 +30,6 @@ export const Topbar = () => {
           })}
         </ul>
       </nav>
-
       <BarIcons />
     </header>
   )

@@ -23,6 +23,7 @@ export const navLinks: ItemLink[] = [
     id: 'about',
     text: 'About Me',
     href: publicRoutes.ABOUT,
-    type: 'link'
+    type: 'link',
+    className: 'max-sm:hidden'
   }
 ]
