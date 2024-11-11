@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: rgb(255, 255, 255);
+    --foreground: rgb(10, 10, 10);
+    --primary: rgb(12 10 9);
+    --primary-foreground: rgb(255, 255, 255);
+    --secondary: rgb(250 250 249);
+    --secondary-foreground: rgb(28 25 23);
+    --tertiary: rgb(37 99 235);
+    --tertiary-foreground: rgb(255, 255, 255);
+    --accent: rgb(245 245 244);
+    --accent-foreground: rgb(41 37 36);
+    --destructive: rgb(185 28 28);
+    --destructive-foreground: rgb(255, 255, 255);
+    --border: rgb(229 229 229);
+    --input: rgb(245 245 245);
+    --ring: rgb(245 245 245);
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: rgb(10, 10, 10);
+    --foreground: #fdfdfd;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+}
