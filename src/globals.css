@@ -22,6 +22,8 @@
     --input: rgb(245 245 245);
     --ring: rgb(245 245 245);
     --radius: 0.5rem;
+    --popover: rgb(255, 255, 255);
+    --popover-foreground: rgb(9, 9, 11);
     --color-1: 0 100% 63%;
     --color-2: 270 100% 63%;
     --color-3: 210 100% 63%;

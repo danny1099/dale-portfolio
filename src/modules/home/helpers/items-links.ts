@@ -1,6 +1,13 @@
 import { type ItemLink } from '@/modules/home/types'
 import { publicRoutes } from '@/config/routes'
 
+export type TextNavLink = {
+  projects: string
+  blog: string
+  about: string
+  get_in_touch?: string
+}
+
 export const navLinks: ItemLink[] = [
   {
     id: 'projects',

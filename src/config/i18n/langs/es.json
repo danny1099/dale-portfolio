@@ -1,7 +1,20 @@
 {
   "intro": {
+    "iam": "Soy",
     "greeting": "Hola! Soy ",
     "description": " un desarrollador de software y analista de datos de Colombia. ¡Trabajemos juntos!",
     "cta": "Mira mi trabajo"
+  },
+  "lang": {
+    "en_locale": "Inglés",
+    "en_description": "Inglés (Estados Unidos)",
+    "es_locale": "Español",
+    "es_description": "Español (Colombia)"
+  },
+  "topbar": {
+    "get_in_touch": "Escríbeme!",
+    "projects": "Proyectos",
+    "blog": "Blog",
+    "about": "Sobre mi"
   }
 }

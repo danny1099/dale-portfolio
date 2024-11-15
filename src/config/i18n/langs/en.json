@@ -1,7 +1,20 @@
 {
   "intro": {
-    "greeting": "Hello! I'm ",
+    "iam": "I'm",
+    "greeting": "Hi! I'm ",
     "description": " a software developer and data analyst from Colombia. Let's work together.",
     "cta": "See my work"
+  },
+  "lang": {
+    "en_locale": "English",
+    "en_description": "English (United States)",
+    "es_locale": "Spanish",
+    "es_description": "Spanish (Colombia)"
+  },
+  "topbar": {
+    "get_in_touch": "Get in touch!",
+    "projects": "Projects",
+    "blog": "Blog",
+    "about": "About Me"
   }
 }
