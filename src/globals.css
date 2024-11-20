@@ -37,7 +37,26 @@
   }
 }
 
+@layer utilities {
+  .scrollbar-tiny::-webkit-scrollbar {
+    width: 0.3rem;
+    height: 0.3rem;
+  }
+
+  .scrollbar-track::-webkit-scrollbar-track {
+    --bg-opacity: 0.5;
+    background-color: var(--background);
+  }
+
+  .scrollbar-thumb::-webkit-scrollbar-thumb {
+    --bg-opacity: 0.5;
+    border-radius: 0.5rem;
+    background-color: var(--accent);
+  }
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
+  scroll-behavior: smooth;
 }

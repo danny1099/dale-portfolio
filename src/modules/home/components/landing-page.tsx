@@ -1,19 +1,19 @@
 import { getTranslations } from 'next-intl/server'
-import { Title, Button, Blob } from '@/modules/common/components'
-import { Welcome } from '@/modules/home/components'
+import { Text, Button } from '@/modules/common/components'
+import { Iam } from '@/modules/home/components'
 
 export const Landing = async () => {
   const t = await getTranslations('intro')
 
   return (
-    <section className="bg-background flex flex-row size-full px-4 py-2 overflow-hidden md:px-16">
-      <article className="bg-background relative flex flex-col size-full md:w-3/5">
-        <Welcome className="mt-56 md:mt-32" />
+    <section className="bg-background flex flex-row size-full px-4 py-2 overflow-hidden bg-no-repeat max-sm:bg-pattern md:px-16">
+      <article className="relative flex flex-col size-full md:w-3/5">
+        <Text content={t('greeting')} className="text-lg text-muted-foreground font-medium mt-28 md:mt-28" />
+        <Text content={t('description')} className="text-muted-foreground line-clamp-3" />
         <Button icon="arrow-right" slot="end" variant="rainbow" className="text-xs mt-5 w-40">
           {t('cta')}
         </Button>
-        <Title text="Danny" className="absolute z-30 bottom-0 text-[6.5rem] md:text-[13rem] md:-ml-4 md:-bottom-3" />
-        <Blob className="-top-[340px] md:hidden" />
+        <Iam />
       </article>
 
       <article className="size-full px-2 py-6 flex flex-col justify-end max-sm:hidden">

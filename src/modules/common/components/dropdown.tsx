@@ -81,10 +81,16 @@ const DropdownMenuItem = React.forwardRef<
   />
 ))
 
+/* interface to change change icon */
+interface IconProps {
+  iconName?: string
+  iconClassName?: string
+}
+
 const DropdownMenuCheckboxItem = React.forwardRef<
   React.ElementRef<typeof DropdownMenuPrimitive.CheckboxItem>,
-  React.ComponentPropsWithoutRef<typeof DropdownMenuPrimitive.CheckboxItem>
->(({ className, children, checked, ...props }, ref) => (
+  React.ComponentPropsWithoutRef<typeof DropdownMenuPrimitive.CheckboxItem> & IconProps
+>(({ className, children, checked, iconName = 'check2', iconClassName, ...props }, ref) => (
   <DropdownMenuPrimitive.CheckboxItem
     ref={ref}
     className={cn(
@@ -96,7 +102,7 @@ const DropdownMenuCheckboxItem = React.forwardRef<
   >
     <span className="absolute left-2 flex h-3.5 w-3.5 items-center justify-center">
       <DropdownMenuPrimitive.ItemIndicator>
-        <Icon name="check2" className="h-4 w-4" />
+        <Icon name={iconName} className={cn('h-4 w-4 fill-current', iconClassName)} />
       </DropdownMenuPrimitive.ItemIndicator>
     </span>
     {children}
@@ -105,8 +111,8 @@ const DropdownMenuCheckboxItem = React.forwardRef<
 
 const DropdownMenuRadioItem = React.forwardRef<
   React.ElementRef<typeof DropdownMenuPrimitive.RadioItem>,
-  React.ComponentPropsWithoutRef<typeof DropdownMenuPrimitive.RadioItem>
->(({ className, children, ...props }, ref) => (
+  React.ComponentPropsWithoutRef<typeof DropdownMenuPrimitive.RadioItem> & IconProps
+>(({ className, children, iconName = 'dot', iconClassName, ...props }, ref) => (
   <DropdownMenuPrimitive.RadioItem
     ref={ref}
     className={cn(
@@ -117,7 +123,7 @@ const DropdownMenuRadioItem = React.forwardRef<
   >
     <span className="absolute left-2 flex h-3.5 w-3.5 items-center justify-center">
       <DropdownMenuPrimitive.ItemIndicator>
-        <Icon name="dot" className="h-4 w-4 fill-current" />
+        <Icon name={iconName} className={cn('h-4 w-4 fill-current', iconClassName)} />
       </DropdownMenuPrimitive.ItemIndicator>
     </span>
     {children}

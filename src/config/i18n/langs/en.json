@@ -1,20 +1,30 @@
 {
   "intro": {
     "iam": "I'm",
-    "greeting": "Hi! I'm ",
-    "description": " a software developer and data analyst from Colombia. Let's work together.",
+    "greeting": "Hello!",
+    "description": "I'm software developer and data analyst, passionate about technology and innovation. Let's work together!",
     "cta": "See my work"
   },
   "lang": {
     "en_locale": "English",
-    "en_description": "English (United States)",
+    "en_description": "Translate to english language (US)",
     "es_locale": "Spanish",
-    "es_description": "Spanish (Colombia)"
+    "es_description": "Translate to spanish language (ES)"
   },
   "topbar": {
     "get_in_touch": "Get in touch!",
     "projects": "Projects",
     "blog": "Blog",
     "about": "About Me"
+  },
+  "about": {
+    "title": "About me",
+    "quote": "“We are what we constantly do. Excellence is not an event, it is a habit” -Aristotle-",
+    "name": "Danny",
+    "iam": "¡Hello Again!, I'm ",
+    "who_iam": " and I am from Colombia. I graduated as a business administrator and worked as a data analyst for several years, but my passion for technology has led me to explore the wonders of software development.",
+    "now_as": "Now as a software developer I like to create strategic solutions that optimize key processes by capturing, transforming and analyzing data to facilitate decision making.",
+    "more_about": "More about me",
+    "stack": "My Stack"
   }
 }

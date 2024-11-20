@@ -1,20 +1,31 @@
 {
   "intro": {
     "iam": "Soy",
-    "greeting": "Hola! Soy ",
-    "description": " un desarrollador de software y analista de datos de Colombia. ¡Trabajemos juntos!",
+    "greeting": "Hola!",
+    "description": "Soy desarrollador de software y analista de datos, apasionado por la tecnología y la innovación. ¡Trabajemos juntos!",
     "cta": "Mira mi trabajo"
   },
   "lang": {
     "en_locale": "Inglés",
-    "en_description": "Inglés (Estados Unidos)",
+    "en_description": "Traducir al idioma inglés (US)",
     "es_locale": "Español",
-    "es_description": "Español (Colombia)"
+    "es_description": "Traducir al idioma español (ES)"
   },
   "topbar": {
     "get_in_touch": "Escríbeme!",
     "projects": "Proyectos",
     "blog": "Blog",
     "about": "Sobre mi"
+  },
+  "about": {
+    "title": "Sobre mi",
+    "description": "Soy desarrollador de software y analista de datos, apasionado por la tecnología y la innovación. ¡Trabajemos juntos!",
+    "quote": "“Somos lo que hacemos constantemente. La excelencia no es un suceso, es un hábito” -Aristóteles-",
+    "name": "Danny",
+    "iam": "¡Hola de nuevo!, Mi nombre es ",
+    "who_iam": " y soy de Colombia. Me gradué como administrador de empresas y trabaje como analista de datos por varios años, pero mi pasión por la tecnología me ha llevado a explorar las maravillas del desarrollo de software.",
+    "now_as": "Ahora como desarrollador de software me gusta crear soluciones estratégicas que optimicen procesos clave mediante la captura, transformación y análisis de datos para facilitar la toma de decisiones.",
+    "more_about": "Mas sobre mi",
+    "stack": "Mi Stack"
   }
 }

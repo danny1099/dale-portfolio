@@ -1,5 +1,4 @@
 'use client'
-import { useState } from 'react'
 import { usePathname, useRouter } from 'next/navigation'
 import { useLocale, useTranslations } from 'next-intl'
 import { i18n, type Locale } from '@/config/i18n/config/locales'
@@ -16,18 +15,17 @@ export const Lang = () => {
   const pathname = usePathname()
   const router = useRouter()
   const locale = useLocale()
-  const [selectLocale, setLocale] = useState(locale)
   const t = useTranslations('lang')
 
   const redirectedPathname = (locale: string) => {
     if (!pathname) return '/'
+
     const segments = pathname.split('/')
     segments[1] = locale
 
+    /* define current path */
     const currentPath = segments.join('/')
-    console.log(currentPath)
-    router.push(currentPath)
-    setLocale(locale)
+    router.push(currentPath, { scroll: false })
   }
 
   const getLocalesStack = () => {
@@ -53,10 +51,15 @@ export const Lang = () => {
       </DropdownMenuTrigger>
 
       <DropdownMenuContent className="w-fit">
-        <DropdownMenuRadioGroup value={selectLocale} onValueChange={(value: string) => redirectedPathname(value)}>
+        <DropdownMenuRadioGroup value={locale} onValueChange={redirectedPathname}>
           {getLocalesStack().map((lang) => {
             return (
-              <DropdownMenuRadioItem key={lang.locale} value={lang.locale}>
+              <DropdownMenuRadioItem
+                key={lang.locale}
+                value={lang.locale}
+                iconName="check2"
+                iconClassName="text-tertiary"
+              >
                 <div className="text-xs flex flex-row gap-x-2 items-center">
                   <img
                     src={`/images/img-flag-${lang.locale}.png`}
