@@ -18,13 +18,13 @@ const stacks = [
   },
   {
     name: 'TypeScript',
-    icon: <SiTypescript size={16} />
+    icon: <SiTypescript size={14} />
   },
   {
     name: 'Git',
     icon: <SiGit size={16} />
   },
-  { name: 'Node.js', icon: <RiNodejsFill size={20} /> },
+  { name: 'Node.js', icon: <RiNodejsFill size={18} /> },
   { name: 'MongoDB', icon: <SiMongodb size={20} /> },
   { name: 'PostgreSQL', icon: <SiPostgresql size={16} /> }
 ]
