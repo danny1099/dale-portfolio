@@ -1,11 +1,11 @@
+/** @type {import('next').NextConfig} */
 import NextIntlPlugin from 'next-intl/plugin'
-import type { NextConfig } from 'next'
 
+/* Request path i18n config */
 const i18nPath = './src/config/i18n/config/request.ts'
 const withNextIntl = NextIntlPlugin(i18nPath)
 
-const nextConfig: NextConfig = {
-  /* config options here */
-}
+/* Nextjs Config */
+const nextConfig = {}
 
 export default withNextIntl(nextConfig)
