@@ -1,6 +1,6 @@
 import { getTranslations } from 'next-intl/server'
 import { Button, Heading, Text } from '@/modules/common/components'
-import { MyStack, WhoIam } from '@/modules/home/components'
+import { MyStack, WhoIam } from '@/modules/about/components'
 
 export const AboutMe = async () => {
   const t = await getTranslations('about')
